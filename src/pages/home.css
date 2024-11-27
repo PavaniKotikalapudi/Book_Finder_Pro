@@ -1,0 +1,36 @@
+/* Text container styling */
+.scroll-text {
+    animation: scrollAnimation 5s infinite; /* Apply the animation */
+    max-width: 70%; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Centers the text container */
+    overflow: hidden; /* Ensures no overflow outside container */
+    text-align: center; /* Centers text inside the container */
+    white-space: nowrap; /* Prevents line breaks for scrolling effect */
+    position: relative; /* For animation positioning */
+    height: 100px; /* Fixed height for the container */
+    line-height: 100px; /* Vertically centers the text */
+}
+
+/* Text animation styling */
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0); /* Starting position */
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        transform: translateY(-20px); /* Moves text up */
+        opacity: 0.8; /* Slightly fades */
+    }
+    100% {
+        transform: translateY(0); /* Returns to starting position */
+        opacity: 1; /* Fully visible again */
+    }
+}
+
+/* General text styles */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+

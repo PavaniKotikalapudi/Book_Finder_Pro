@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shared-background {
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  background-image: url('./images/background_img1.jpg');
+  background-size: cover; /* Ensure background covers the area */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(13, 12, 12); /* Ensure the text color is visible */
+  padding: 0 1rem;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* Overlay for better text contrast */
+.shared-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1; /* Place the overlay behind the content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scroll-text {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;  /* Make text size larger */
+  line-height: 1.5;
+  margin: 10px 0;
 }

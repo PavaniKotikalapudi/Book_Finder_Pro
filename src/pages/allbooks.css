@@ -1,0 +1,66 @@
+/* Container for the whole books section */
+.all-books {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Search input styling */
+  .all-books input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .all-books input:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Books list container styling */
+  .books-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid layout */
+    gap: 20px; /* Space between cards */
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Each book item (card) styling */
+  .book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover; /* Ensures images are cropped properly */
+    margin-bottom: 1rem;
+  }
+  
+  .book-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  /* Hover effect for book cards */
+  .book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .bg{
+    background-color: rgb(254, 133, 236);
+  }
+  
+  
